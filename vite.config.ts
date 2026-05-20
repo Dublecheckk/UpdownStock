@@ -6,11 +6,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/chart-api/naver': {
+      '/api/naver-chart': {
         target: 'https://fchart.stock.naver.com',
         changeOrigin: true,
         secure: true,
-        rewrite: (path) => path.replace(/^\/chart-api\/naver/, ''),
+        rewrite: (path) => path.replace(/^\/api\/naver-chart/, '/sise.nhn'),
       },
     },
   },

@@ -107,7 +107,7 @@ async function fetchDailyCandles(stockCode: string): Promise<PricePoint[]> {
     count: String(CANDLES_PER_STOCK),
     requestType: '0',
   });
-  const response = await fetch(`/chart-api/naver/sise.nhn?${params.toString()}`);
+  const response = await fetch(`/api/naver-chart?${params.toString()}`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch daily candles for ${stockCode}`);

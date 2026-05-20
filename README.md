@@ -26,3 +26,12 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## Vercel 배포 설정
+
+- Framework Preset: `Vite`
+- Install Command: `npm install`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+실제 일봉 데이터는 `/api/naver-chart` Vercel 서버리스 함수가 네이버 금융 차트 데이터를 프록시합니다.
