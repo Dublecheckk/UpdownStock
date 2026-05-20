@@ -15,6 +15,8 @@
 - 네트워크 실패 시 예비 mock 데이터 사용
 
 ## 실행
+https://updown-stock.vercel.app/
+
 
 ```bash
 npm install
